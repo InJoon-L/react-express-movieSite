@@ -6,7 +6,7 @@ const favoriteSchema = mongoose.Schema({
         type: Schema.Types.ObjectId,
         ref: 'User'
     },
-    movieId: {
+    movieId : {
         type: String
     },
     movieTitle: {
@@ -15,10 +15,12 @@ const favoriteSchema = mongoose.Schema({
     moviePost: {
         type: String
     },
-    movieRunTime: {
+    movieRunTime : {
         type: String
     }
-}, { timestamps: true})
+
+}, { timestamps: true })
+
 
 const Favorite = mongoose.model('Favorite', favoriteSchema);
 

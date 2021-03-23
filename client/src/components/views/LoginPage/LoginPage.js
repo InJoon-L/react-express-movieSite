@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
-import { useDispatch } from 'react-redux';
-import { loginUser } from '../../../_actions/user_action';
-import { withRouter } from 'react-router-dom';
+import React, { useState } from "react";
+import { withRouter } from "react-router-dom";
+import { loginUser } from "../../../_actions/user_action";
+import { Formik } from 'formik';
 import * as Yup from 'yup';
-import { Form, Input, Button, Checkbox, Typography } from 'antd';
-import Icon from '@ant-design/icons';
-import { Formik } from 'formik'
+import { Form, Icon, Input, Button, Checkbox, Typography } from 'antd';
+import { useDispatch } from "react-redux";
 
 const { Title } = Typography;
 
@@ -146,3 +145,5 @@ function LoginPage(props) {
 };
 
 export default withRouter(LoginPage);
+
+

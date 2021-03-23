@@ -1,6 +1,6 @@
 import React from 'react'
 import { Descriptions, Badge } from 'antd';
-import DescriptionsItem from 'antd/lib/descriptions/Item';
+
 function MovieInfo(props) {
 
     let { movie } = props

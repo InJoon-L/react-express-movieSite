@@ -1,15 +1,15 @@
-import React from 'react'
-import { Menu } from 'antd'
-import { withRouter } from 'react-router-dom';
+import React from 'react';
+import { Menu } from 'antd';
+
 
 function LeftMenu(props) {
-    return (
-        <Menu mode={props.mode}>
-            <Menu.Item key='favorite'>
-                <a href="/favorite">Favorite</a>
-            </Menu.Item>
-        </Menu>
-    )
+  return (
+    <Menu mode={props.mode}>
+      <Menu.Item key="favorite">
+        <a href="/favorite">Favorite</a>
+      </Menu.Item>
+    </Menu>
+  )
 }
 
-export default withRouter(LeftMenu)
+export default LeftMenu
