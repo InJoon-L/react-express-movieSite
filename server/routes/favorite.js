@@ -31,7 +31,7 @@ router.post('/favorited', (req, res) => {
             result = true
         }
         
-        res.status.status(200).json({ success: true, favorited: result })
+        res.status(200).json({ success: true, favorited: result })
     })
 
 })

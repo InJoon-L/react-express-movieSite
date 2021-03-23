@@ -20,7 +20,7 @@ function Favorite(props) {
             movieId
         }
 
-        Axios.post('http://localhost:5000/api/favorite/favoriteNumber', variables)        
+        Axios.post('/api/favorite/favoriteNumber', variables)        
         .then(response => {
             setFavoriteNumber(response.data.favoriteNumber)
             if(response.data.success) {
@@ -31,7 +31,7 @@ function Favorite(props) {
         })
 
 
-        Axios.post('http://localhost:5000/api/favorite/favorited', variables)        
+        Axios.post('/api/favorite/favorited', variables)        
         .then(response => {
             if(response.data.success) {
                 setFavorited(response.data.favorited)
